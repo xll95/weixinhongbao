@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 指向当前的Mapper接口 -->
+<mapper namespace="com.mhys.ssmdemo.mapper.RoleMapper">
+	
+	<select id="findAllRole" resultMap="role">
+	
+		SELECT * FROM tb_role
+	</select>
+
+
+</mapper>

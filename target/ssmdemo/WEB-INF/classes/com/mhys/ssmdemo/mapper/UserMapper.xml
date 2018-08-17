@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 指向当前的Mapper接口 -->
+<mapper namespace="com.mhys.ssmdemo.mapper.UserMapper">
+	
+	<resultMap type="u" id="userMap">
+		<id property="id" column="id" />
+		<result column="name" property="name" />
+		<result column="age" property="age" />
+		<result column="birthday" property="birthday" />
+		<association property="type" javaType="ut">
+			<id column="id" property="id" />
+			<result column="typeName" property="typeName" />
+		</association>
+	</resultMap>
+
+
+	<select id="getAllUsers"  resultMap="userMap" >
+		select * from tb_user,tb_type where tb_user.typeid = tb_type.id
+	</select>
+
+	<delete id="removeUser">
+		delete from tb_user where id = #{id}
+	</delete>
+
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 设置日志以LOG4J进行显示 -->
+	 <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    
+    <!-- 设置类的别名 -->
+    <typeAliases>
+		<typeAlias type="com.mhys.ssmdemo.pojo.UserInf" alias="u"/>
+		<typeAlias type="com.mhys.ssmdemo.pojo.UserType" alias="ut"/>
+		<typeAlias type="com.mhys.ssmdemo.pojo.Role" alias="role"/>
+		<typeAlias type="com.mhys.ssmdemo.pojo.Command" alias="command"/>
+		
+    </typeAliases>
+</configuration>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 指向当前的Mapper接口 -->
+<mapper namespace="com.mhys.ssmdemo.mapper.CommandMapper">
+	<select id="findAllCommand" resultType="command">select * from command</select>
+</mapper>

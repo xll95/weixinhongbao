@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script src="js/jquery.min.js"></script>
+<script>
+	function TestUrl(){
+		
+	$.post("user/testUrl.action",{name:"diko"},function(data){
+			
+			
+			alert(data);
+			console.info(typeof(data));
+		});
+	}
+</script>
+<body>
+<button onclick="TestUrl()">TestUrl</button>
+</body>
+</html>

@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:16:47 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-3 234
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:16:47 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-1 233
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:16:47 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-2 233
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:17:03 +0800] "GET /company/findAll.do HTTP/1.1" 404 987 http-bio-8080-exec-6 4
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:17:25 +0800] "GET /ssmdemo/company/findAll.do HTTP/1.1" 404 1003 http-bio-8080-exec-9 1
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:17:51 +0800] "GET /command/findAll.action HTTP/1.1" 404 995 http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:24 +0800] "GET /user/showUsers.action HTTP/1.1" 404 993 http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:27 +0800] "GET /user/showUsers.action HTTP/1.1" 404 993 http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:32 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-9 3
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:39 +0800] "GET /ssmdemo/ HTTP/1.1" 404 967 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:46 +0800] "GET /ssmdemo/index.html HTTP/1.1" 404 987 http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:50 +0800] "GET /index.html HTTP/1.1" 404 971 http-bio-8080-exec-8 4
+0:0:0:0:0:0:0:1 - - [14/Aug/2018:16:18:56 +0800] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-8 2
