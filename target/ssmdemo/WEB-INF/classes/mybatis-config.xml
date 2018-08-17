@@ -10,10 +10,9 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     
     <!-- 设置类的别名 -->
     <typeAliases>
-		<typeAlias type="com.mhys.ssmdemo.pojo.UserInf" alias="u"/>
-		<typeAlias type="com.mhys.ssmdemo.pojo.UserType" alias="ut"/>
-		<typeAlias type="com.mhys.ssmdemo.pojo.Role" alias="role"/>
-		<typeAlias type="com.mhys.ssmdemo.pojo.Command" alias="command"/>
-		
+		<typeAlias type="com.gab.pojo.UserInf" alias="u"/>
+		<typeAlias type="com.gab.pojo.UserType" alias="ut"/>
+		<typeAlias type="com.gab.pojo.Role" alias="role"/>
+		<typeAlias type="com.gab.pojo.Command" alias="command"/>
     </typeAliases>
 </configuration>
