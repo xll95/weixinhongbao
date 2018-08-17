@@ -23,8 +23,8 @@ public class WeiChatOpenidSessionkey {
                 status = "0";//失败状态
                 msg = "code为空";
             }else {
-            			String requestUrl = WX_URL.replace("APPID", "1wqas2342dasaqwe2323424ac23qwe").
-                        replace("SECRET", WeixinConstants.APP_SECRECT).replace("JSCODE", "061u2xHN0bvWW32fnSJN0nHDHN0u2xHs").
+            			/*String requestUrl = WX_URL.replace("APPID", "1wqas2342dasaqwe2323424ac23qwe").
+                        replace("SECRET", WeixinConstants.APP_SECRECT).replace("JSCODE", "").
                         replace("authorization_code", WeixinConstants.AUTHORIZATION_CODE);
                // logger.info(requestUrl);
                 // 发起GET请求获取凭证
@@ -41,7 +41,7 @@ public class WeiChatOpenidSessionkey {
                 }else {
                     status = "0";
                     msg = "code无效";
-                }
+                }*/
             }
             map.put("status", status);
             map.put("msg", msg);
