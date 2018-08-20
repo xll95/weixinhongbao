@@ -171,7 +171,7 @@
 </dependency>
   </dependencies>
   <build>
-    <finalName>ssmdemo</finalName>
+    <finalName>weixihongbao</finalName>
     <plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
