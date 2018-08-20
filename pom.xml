@@ -158,6 +158,17 @@
         <version>4.1.0</version>
     </dependency>
 
+<!-- 获取openid和session_key需要的依赖 -->
+<dependency>
+   <groupId>org.codehaus.xfire</groupId>
+   <artifactId>xfire-core</artifactId>
+   <version>1.2.6</version>
+</dependency>
+<dependency>
+   <groupId>org.bouncycastle</groupId>
+   <artifactId>bcprov-jdk16</artifactId>
+   <version>1.46</version>
+</dependency>
   </dependencies>
   <build>
     <finalName>ssmdemo</finalName>
