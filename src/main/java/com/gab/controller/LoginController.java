@@ -1,17 +1,29 @@
 package com.gab.controller;
 
+
+import java.io.InputStream;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
 
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import com.baidu.aip.speech.AipSpeech;
 import com.gab.pojo.Command;
 import com.gab.service.CommandService;
+
+import sun.nio.ch.IOUtil;
 
 @Controller
 @RequestMapping("/user")
@@ -22,10 +34,7 @@ public class LoginController {
 	@RequestMapping("/doLogin")
 	@ResponseBody//以json类型返回
 	public void doLogin(HttpServletRequest request,HttpServletResponse response) {
-		//List<Command> list=commandService.findAllCommand();
 		System.out.println("this request is:"+request);
-		
-		
         String nick_name="";
         String head_img="";
         String sex="";
